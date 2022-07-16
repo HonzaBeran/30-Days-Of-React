@@ -10,4 +10,6 @@ const countries = [
     'Ireland',
     'Japan',
     'Kenya',
-  ]
+]
+
+export { countries };
