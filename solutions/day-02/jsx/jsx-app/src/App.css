@@ -1,0 +1,12 @@
+header {
+  margin: 10px;
+}
+
+.title {
+  color: orange;
+}
+
+footer {
+  border: 1px solid black;
+  margin: 100px;
+}
