@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import house from './house.jpg';
 import './App.css';
 
-function App() {
+
+function Skill(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="skill">
+     {props.technology}
+    </div>
+  )
+}
+
+function App() {
+  const skills = ['HTML', 'CSS', 'Sass', 'JS', 'React', 'Redux', 'Node', 'MongoDB', 'Python', 'Python', 'Flask', 'Django', 'NumPy', 'Pandas', 'Data Analysis', 'MYSQL', 'GraphQL', 'D3.js', 'Gatsby', 'Docker', 'Heroku', 'Git'];
+  
+  return (
+    <div className="card">
+      <div className='person'>
+        <img src={house} alt='Dr. House'></img>
+        <div className='name'>Dr. House</div>
+        <div className='job'>Best Doctor Ever!</div>
+      </div>
+      <h2>Skills</h2>
+      <div className='skills'>
+        {skills.map((skill) => <Skill technology={skill} />)}
+      </div>
+      <div className='date'>Joined on 2022</div>
     </div>
   );
 }

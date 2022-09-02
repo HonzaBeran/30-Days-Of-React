@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f0f1f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  margin: 10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .person {
+  padding: 10px;
+  width: 220px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card .person .name {
+  padding: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.card .person .job {
+  text-align: center;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card .skills {
+  margin: 10px;
+  padding: 5px;
+}
+
+.card .date {
+  font-size: 0.7em;
+  margin: 10px;
+  padding: 5px;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills .skill {
+  background-color: #2acfcf;
+  font-size: 0.8em;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 0px 5px;
+  display: inline-block;
+  min-width: 3em;
+  min-height: 2em;
+  line-height: 2em;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
