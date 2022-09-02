@@ -17,14 +17,14 @@ function App() {
     <div className="card">
       <div className='person'>
         <img src={house} alt='Dr. House'></img>
-        <div className='name'>Dr. House</div>
+        <div className='name'>Dr. House <i class="fa-solid fa-circle-check"></i></div>
         <div className='job'>Best Doctor Ever!</div>
       </div>
       <h2>Skills</h2>
       <div className='skills'>
         {skills.map((skill) => <Skill technology={skill} />)}
       </div>
-      <div className='date'>Joined on 2022</div>
+      <div className='date'><i class="fa-regular fa-clock"></i> Joined on Aug, 2022</div>
     </div>
   );
 }

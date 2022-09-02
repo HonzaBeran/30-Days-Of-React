@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 8px;
 }
 
 .card .person {
@@ -29,6 +31,7 @@ body {
 }
 
 .card .person .name {
+  margin-top: 10px;
   padding: 5px;
   text-align: center;
   font-size: 1em;
@@ -38,6 +41,7 @@ body {
   text-align: center;
   padding: 5px;
   font-size: 0.8em;
+  font-weight: 100;
 }
 
 .card h2 {
@@ -74,7 +78,7 @@ body {
   background-color: #2acfcf;
   font-size: 0.8em;
   /* border: 1px solid black; */
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 0px 5px;
   display: inline-block;
   min-width: 3em;
@@ -88,5 +92,7 @@ img {
   max-width: 200px;
   height: auto;
   border-radius: 50%;
+  margin-top: 10px;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=App.css.map */
